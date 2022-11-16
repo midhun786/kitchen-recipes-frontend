@@ -46,26 +46,26 @@ function Login() {
     },
 
     onSubmit: async (values) => {
-      // try {
-      //   let loginData = await axios.post(`${env.api}/login`, values);
-      //   console.log(loginData);
+      try {
+        let loginData = await axios.post(`${env.api}/login`, values);
+        console.log(loginData);
 
-      //   if (loginData.data.token) {
-      //     if (loginData.status === 200) {
+        if (loginData.data.token) {
+          if (loginData.status === 200) {
 
-      //       navigate("/portal/home");
-      //       window.localStorage.setItem("app-token", loginData.data.token);
-      //       window.localStorage.setItem("profile", loginData.data.user.name);
-      //       window.localStorage.setItem("id", loginData.data.user._id);
-      //       window.localStorage.setItem("email", loginData.data.user.email);
-      //     }
-      //   } else {
-      //     alert(loginData.data.message);
-      //   }
-      // } catch (error) {
-      //   alert(error.response.data.message);
-      //   console.log(error);
-      // }
+            navigate("/portal/home");
+            window.localStorage.setItem("app-token", loginData.data.token);
+            window.localStorage.setItem("profile", loginData.data.user.name);
+            window.localStorage.setItem("id", loginData.data.user._id);
+            window.localStorage.setItem("email", loginData.data.user.email);
+          }
+        } else {
+          alert(loginData.data.message);
+        }
+      } catch (error) {
+        alert(error.response.data.message);
+        console.log(error);
+      }
       
     },
   });

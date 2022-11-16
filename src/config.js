@@ -1,3 +1,3 @@
 export const env ={
-   api : "http://localhost:5000"
+   api : "https://kitchen-recipes-backend.vercel.app"
     }
