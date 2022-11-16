@@ -13,9 +13,9 @@ import  animationData from "../lotties/chef.json";
 function Login() {
   let navigate = useNavigate();
 
-  const handleLogin=()=>{
-    navigate("/portal/home");
-  }
+  // const handleLogin=()=>{
+  //   navigate("/portal/home");
+  // }
   
     // let username = "abc";
     // let pass = "123";
@@ -147,7 +147,7 @@ function Login() {
                         <button
                           type="submit"
                           className="btn btn-outline-primary container fw-bold myname "
-                        onClick={()=>handleLogin()}
+                        // onClick={()=>handleLogin()}
                         >
                           LOGIN
                         </button>
