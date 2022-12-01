@@ -84,7 +84,7 @@ function Login() {
     
       <div className="container login">
         <span className="row d-flex align-content-center justify-content-center ">
-          <span className="col-lg-4 col-md-6 col-sm-9 pt-5 ">
+          <span className="col-lg-5 col-md-6 col-sm-9 pt-5 ">
          
             <div className="card o-hidden border-0 shadow-lg  mt-3 transp  d-flex align-content-center">
               <div className="card-body p-2">
@@ -98,7 +98,7 @@ function Login() {
                         <h4 className="" style={{color:"#ff245b"}}>
                           Welcome To Login Page
                         </h4>
-{View}
+                         {View}
                       </div>
 
 
@@ -157,7 +157,11 @@ function Login() {
                           Don't have an Account ? 
                           <Link to={"/register"} style={{color:"black"}}> Register</Link>
                         </p>
+                        <strong className="mt-2"style={{color:"black"}}>User credential</strong> <br/>
+                        <span style={{color:"black"}}>Email:midhunkumarengineer98@gmail.com</span><br/>
+                        <span style={{color:"black"}}>Password :12345678</span>
                       </div>
+                      
                     
                     </div>
                   </div>
